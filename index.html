@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey</title>
+    <!-- daisy and tailwind link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav></nav>
+    <header class="container object-cover mx-auto my-5 px-5 lg:my-7 ">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2"
+                        class="btn btn-circle w-10 h-10 border-none rounded-full bg-black text-white">❮</a>
+                    <a href="#slide2"
+                        class="btn btn-circle w-10 h-10 border-none rounded-full bg-black text-white">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/banner.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1"
+                        class="btn btn-circle w-10 h-10 border-none rounded-full bg-black text-white">❮</a>
+                    <a href="#slide1"
+                        class="btn btn-circle w-10 h-10 border-none rounded-full bg-black text-white">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto my-5 px-5 lg:my-20">
+        <!-- club section  -->
+        <section>
+            <hr class="my-8">
+            <div class="text-center space-y-6">
+                <h1 class="font-manrope font-extrabold text-[#131318] text-xl lg:text-4xl">Professional Hockeys Club
+                </h1>
+                <p class="font-manrope font-normal text-[#13131899] text-sm lg:text-lg ">Statistics of a club of hockey
+                    experts with quality facilities, experience coaches,
+                    <br>
+                    senior player, and training grounds.
+                </p>
+            </div>
+            <hr class="my-8">
+        </section>
+        <!-- club stat  -->
+        <section>
+            <div class="lg:flex justify-between items-center text-center ">
+                <div class="p-5 space-y-2">
+                    <p class="radial-progress text-red-500  border-primary" style="--value:87;" role="progressbar">87%
+                    </p>
+                    <h3 class="font-manrope font-semibold text-xl text-[#131318]">Player Facility</h3>
+                    <p class="font-manrope font-normal text-lg text-[#13131899]  ">Statistics of top class
+                        <br> player facility
+                    </p>
+                </div>
+                <div class="  p-5 space-y-2">
+                    <p class="radial-progress text-green-500  border-primary" style="--value:95;" role="progressbar">95%
+                    </p>
+                    <h3 class="font-manrope font-semibold text-xl text-[#131318]">Experienced Coach</h3>
+                    <p class="font-manrope font-normal text-lg text-[#13131899]  ">Statistics of experience
+                        <br>Coach.
+                    </p>
+                </div>
+                <div class="  p-5 space-y-2">
+                    <p class="radial-progress text-orange-500  border-primary" style="--value:90;" role="progressbar">
+                        90%
+                    </p>
+                    <h3 class="font-manrope font-semibold text-xl text-[#131318]">Senior Player</h3>
+                    <p class="font-manrope font-normal text-lg text-[#13131899]  ">Statistics of experience and
+                        <br>respected athlete.
+                    </p>
+                </div>
+                <div class="  p-5 space-y-2">
+                    <p class="radial-progress text-blue-500  border-primary" style="--value:80;" role="progressbar">80%
+                    </p>
+                    <h3 class="font-manrope font-semibold text-xl text-[#131318]">Training Ground</h3>
+                    <p class="font-manrope font-normal text-lg text-[#13131899]  ">An area for practicing
+                        <br>skills and fitness.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- program section  -->
+        <section>
+            <div>
+                <hr class="my-10">
+                <div class="text-center space-y-6">
+                    <h1 class="font-manrope font-extrabold text-[#131318] text-xl lg:text-4xl">Program Section</h1>
+                    <p class="font-manrope font-normal text-[#13131899] text-sm lg:text-lg ">A team of skilled hockey
+                        players competing for
+                        <br>
+                        glory and fame.
+                    </p>
+                </div>
+                <hr class="my-10">
+            </div>
+            <div class="grid grid-3 gap-6">
+                <div class="lg:col-span-1">
+                    <div class="hero object-cover rounded-2xl h-80" style="background-image: url(Images/2.png);">
+                        <div class="hero-overlay "></div>
+                        <div class="hero-content text-left text-white">
+                            <div class="max-w-sm">
+                                <h1 class="mb-5 pt-10 font-manrope font-extrabold text-xl lg:text-2xl">Junior Program</h1>
+                                <p class="mb-5 font-manrope font-normal text-sm lg:text-lg ">A program that prepares young hockey players for higher levels of competition. It offers opportunities for skill development, exposure, and scholarships.</p>
+                                <button class="font-manrope font-semibold text-xl lg:text-xl rounded-lg bg-[#FF4240] border-none py-2 px-5">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-1">
+                    <div class="hero object-cover rounded-2xl h-80" style="background-image: url(Images/3.png);">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content text-left text-white">
+                            <div class="max-w-sm">
+                                <h1 class="mb-5 pt-10 font-manrope font-extrabold text-xl lg:text-2xl">Teenager Program</h1>
+                                <p class="mb-5 font-manrope font-normal text-sm lg:text-lg ">The program that the Teenager Program of hockey is a program that aims to develop the skills and abilities of young hockey players aged 13 to 18.</p>
+                                <button class="font-manrope font-semibold text-xl lg:text-xl rounded-lg bg-[#FF4240] border-none py-2 px-5">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <div class="hero object-cover rounded-2xl h-80" style="background-image: url(Images/4.png);">
+                        <div class="hero-overlay "></div>
+                        <div class="hero-content text-left text-white">
+                            <div class="max-w-sm">
+                                <h1 class="mb-5 pt-10 font-manrope font-extrabold text-xl lg:text-2xl">Professional Program</h1>
+                                <p class="mb-5 font-manrope font-normal text-sm lg:text-lg ">The Professional Program of hockey is a program that trains and certifies hockey players who want to pursue a career in the sport.</p>
+                                <button class="font-manrope font-semibold text-xl lg:text-xl rounded-lg bg-[#FF4240] border-none py-2 px-5">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
